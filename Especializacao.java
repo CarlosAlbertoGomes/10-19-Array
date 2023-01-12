@@ -5,6 +5,7 @@ public class Especializacao extends Cursos{
         super(codigoCurso, nome, vagas, valor, periodo, matricula);
         this.requisito = requisito;
     }
+    public Especializacao(){}
     public String getRequisito() {
         return requisito;
     }
@@ -15,6 +16,6 @@ public class Especializacao extends Cursos{
     public void visualizar(){
         super.visualizar();
         System.out.println(
-                " \nPré-requisito para o curso: " + getRequisito());
+                "Pré-requisito para o curso: " + getRequisito());
     }
 }
